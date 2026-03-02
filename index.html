@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allan k. Kebenei my Portfolio</title>
+    <title>Kebenei Allan Kipchumba - Cyber Security Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Sidebar -->
     <nav class="sidebar">
         <div class="logo">
-            <h2>Allan.K</h2>
+            <h2>Allan<span class="accent">.</span></h2>
         </div>
         <ul class="nav-links">
             <li><a href="#about" class="active"><i class="fas fa-user"></i> About</a></li>
             <li><a href="#services"><i class="fas fa-briefcase"></i> Services</a></li>
-            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#skills"><i class="fas fa-shield-alt"></i> Skills</a></li>
             <li><a href="#experience"><i class="fas fa-history"></i> Experience</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
         <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/Lowkeyvix" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kebenei-kahu-7a7b00318/details/education/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </nav>
 
@@ -35,21 +34,22 @@
         <section id="about" class="section">
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Hi, My name is <span class="highlight">Allan K. Kebenei</span>, a <span class="highlight">Cyber security Engineer </span> in search for <span class="highlight">Opportunities</span>!</h1>
+                    <div class="hero-text" data-aos="fade-right">
+                        <h1>Hi, My name is <span class="highlight">Kebenei Allan</span>, a <span class="highlight">Cyber Security Engineer</span> in search for <span class="highlight">New Opportunities</span>!</h1>
                     </div>
-                    <div class="hero-image">
-                        <img src="myfoto2.jpg" alt="Your Name">
+                    <div class="hero-image" data-aos="fade-left">
+                        <img src="myfoto2.jpg" alt="Kebenei Allan Kipchumba">
+                        <div class="glow-effect"></div>
                     </div>
                 </div>
                 
-                <div class="about-content">
+                <div class="about-content" data-aos="fade-up">
                     <h2 class="section-title">About</h2>
                     <h3 class="subtitle">Mostly self taught with a lot of interest in Cyber Security</h3>
-                    <p>Hi, I am Allan, a 23 year old located in Nairobi, Kenya. My interest has always been in Cyber Security. I want to ensure that security is our top priority within our quickly developing world and would like to contribute to a more secure digital environment. I like to keep myself relevant by solving Capture The Flags and following the latest IT developments. I also keep myself busy by listening to music, gaming and listening to podcasts like Past gas Podcast. I would like to improve myself within the Cyber Security field in order to become the ultimate Penetration Tester. I always keep a close eye to newly discovered vulnerabilities and like to challenge myself with unsolved weaknesses. I am someone who wants to make the world a more secure place for the next generation, even if it goes unnoticed.</p>
-                    <p></p>
+                    <p>Hi, I am Allan, a 23 year old located in Nairobi, Kenya. My interest has always been in Cyber Security. I want to ensure that security is our top priority within our quickly developing world and would like to contribute to a more secure digital environment.</p>
+                    <p>I like to keep myself relevant by solving Capture The Flags and following the latest IT developments. I also keep myself busy by listening to music, gaming and listening to podcasts like Past Gas Podcast. I would like to improve myself within the Cyber Security field in order to become the ultimate Penetration Tester. I always keep a close eye to newly discovered vulnerabilities and like to challenge myself with unsolved weaknesses. I am someone who wants to make the world a more secure place for the next generation, even if it goes unnoticed.</p>
                     
-                    <h3 class="subtitle">Projects or achievements</h3>
+                    <h3 class="subtitle" style="margin-top: 40px;">I specialize in Network Mapping, Penetration Testing & Web Security</h3>
                 </div>
             </div>
         </section>
@@ -57,23 +57,35 @@
         <!-- Services Section -->
         <section id="services" class="section">
             <div class="container">
-                <h2 class="section-title">Services</h2>
-                <h3 class="subtitle">What I specialize in</h3>
+                <h2 class="section-title" data-aos="fade-up">Services</h2>
+                <h3 class="subtitle" data-aos="fade-up">Professional Security Solutions</h3>
+                
                 <div class="services-grid">
-                    <div class="service-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h4>Network Attacks</h4>
-                        <p>I'm able to use some powerful set of tools and methods like Airmon-ng, Evil Twin, Bruteforce, Wireshark and Mitm. These allow me to conduct a range of attacks and analysisses on networks, identify vunerabilities and potential entry points for unauthorized access.</p>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4>Network Mapping & Security</h4>
+                        <p>Comprehensive network architecture analysis and vulnerability assessment. I map your entire infrastructure to identify weak points before attackers do, implementing robust security protocols that keep your data flowing safely.</p>
+                        <div class="service-hover"></div>
                     </div>
-                    <div class="service-card">
-                        <i class="fas fa-lock"></i>
-                        <h4></h4>
-                        <p>Description of your service</p>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Website Design & Security</h4>
+                        <p>Building beautiful, functional websites with security at their core. From secure coding practices to penetration testing your web applications, I ensure your digital presence is both stunning and bulletproof against cyber threats.</p>
+                        <div class="service-hover"></div>
                     </div>
-                    <div class="service-card">
-                        <i class="fas fa-code"></i>
-                        <h4>Service 3</h4>
-                        <p>Description of your service</p>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h4>Penetration Testing</h4>
+                        <p>Ethical hacking that simulates real-world attacks to expose vulnerabilities. I think like an attacker to find your weaknesses before they do, providing detailed reports and actionable solutions to fortify your defenses.</p>
+                        <div class="service-hover"></div>
                     </div>
                 </div>
             </div>
@@ -82,23 +94,149 @@
         <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <h3 class="subtitle">Mastering modern technologies</h3>
+                <h2 class="section-title" data-aos="fade-up">Skills</h2>
+                <h3 class="subtitle" data-aos="fade-up">Mastering Modern Security Technologies</h3>
                 
                 <div class="skills-grid">
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
                         <div class="skill-info">
-                            <span class="skill-name">Skill Name</span>
-                            <span class="skill-level">90%</span>
+                            <span class="skill-name"><i class="fas fa-network-wired"></i> Network Mapping & Security</span>
+                            <span class="skill-percent">90%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
+                            <div class="skill-progress" data-width="90"></div>
                         </div>
-                        <span class="skill-category">Professional</span>
-                        <span class="skill-years">5 years experience</span>
+                        <div class="skill-meta">
+                            <span class="skill-level">Professional</span>
+                            <span class="skill-years">3 years experience</span>
+                        </div>
                     </div>
-                    
-                    <!-- Add more skills by copying the skill-item div -->
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-user-secret"></i> Penetration Testing</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                        <div class="skill-meta">
+                            <span class="skill-level">Professional</span>
+                            <span class="skill-years">3 years experience</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-code"></i> Web Development & Security</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <div class="skill-meta">
+                            <span class="skill-level">Advanced</span>
+                            <span class="skill-years">3 years experience</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="250">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-linux"></i> Linux Systems</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                        <div class="skill-meta">
+                            <span class="skill-level">Advanced</span>
+                            <span class="skill-years">4 years experience</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-windows"></i> Windows Systems</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <div class="skill-meta">
+                            <span class="skill-level">Advanced</span>
+                            <span class="skill-years">4 years experience</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="350">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-java"></i> Java Programming</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <div class="skill-meta">
+                            <span class="skill-level">Intermediate</span>
+                            <span class="skill-years">3 years experience</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-bug"></i> Malware Analysis</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <div class="skill-meta">
+                            <span class="skill-level">Intermediate</span>
+                            <span class="skill-years">2 years experience</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="450">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-lock"></i> Cryptography</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                        <div class="skill-meta">
+                            <span class="skill-level">Intermediate</span>
+                            <span class="skill-years">2 years experience</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-cloud"></i> Cloud Security</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                        <div class="skill-meta">
+                            <span class="skill-level">Intermediate</span>
+                            <span class="skill-years">1 year experience</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="550">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-terminal"></i> Python for Security</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <div class="skill-meta">
+                            <span class="skill-level">Intermediate</span>
+                            <span class="skill-years">2 years experience</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -106,66 +244,93 @@
         <!-- Experience Section -->
         <section id="experience" class="section">
             <div class="container">
-                <h2 class="section-title">Experiences</h2>
+                <h2 class="section-title" data-aos="fade-up">Experiences</h2>
                 
-                <div class="experience-tabs">
+                <div class="experience-tabs" data-aos="fade-up">
                     <button class="tab-btn active" onclick="showTab('work')">Work Experience</button>
                     <button class="tab-btn" onclick="showTab('education')">Education</button>
                     <button class="tab-btn" onclick="showTab('courses')">Courses</button>
                 </div>
 
-                <div id="work" class="tab-content active">
+                <div id="work" class="tab-content active" data-aos="fade-up">
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="timeline-date">2023 - Present</div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2021 - Present</div>
                             <div class="timeline-content">
-                                <h4>Job Title</h4>
-                                <p>Company Name</p>
+                                <h4>Self-Employed Tech Specialist</h4>
+                                <p>Freelance & Personal Business</p>
+                                <ul>
+                                    <li>Building custom websites and web applications for clients</li>
+                                    <li>Computer repair and system optimization services</li>
+                                    <li>Network setup and security configuration</li>
+                                    <li>Technical consultation and IT support</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="education" class="tab-content">
+                <div id="education" class="tab-content" data-aos="fade-up">
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="timeline-date">2019 - 2023</div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2022 - Present</div>
                             <div class="timeline-content">
-                                <h4>Degree Name</h4>
-                                <p>University Name</p>
+                                <h4>Diploma in Cyber Security</h4>
+                                <p>Mount Kenya University, Nairobi</p>
+                                <ul>
+                                    <li>Currently pursuing comprehensive cyber security curriculum</li>
+                                    <li>Focusing on network security and ethical hacking</li>
+                                    <li>Expected graduation: 2025</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="courses" class="tab-content">
+                <div id="courses" class="tab-content" data-aos="fade-up">
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="timeline-date">2023</div>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Continuous</div>
                             <div class="timeline-content">
-                                <h4>Course Name</h4>
-                                <p>Platform/Institution</p>
+                                <h4>Capture The Flag (CTF) Competitions</h4>
+                                <p>Various Online Platforms</p>
+                                <ul>
+                                    <li>Regular participation in security challenges</li>
+                                    <li>Practical penetration testing skills development</li>
+                                    <li>Reverse engineering and cryptography puzzles</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Ongoing</div>
+                            <div class="timeline-content">
+                                <h4>Self-Directed Learning</h4>
+                                <p>Online Resources & Communities</p>
+                                <ul>
+                                    <li>Security podcasts (Past Gas, Darknet Diaries)</li>
+                                    <li>Technical documentation and research papers</li>
+                                    <li>Security community engagement</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <h3 class="subtitle">Let's work together</h3>
-                <div class="contact-content">
-                    <p>Email: your.email@example.com</p>
-                    <p>Location: Your City, Country</p>
                 </div>
             </div>
         </section>
 
     </main>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254116389711" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
