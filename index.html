@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan k. Kebenei my Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar">
+        <div class="logo">
+            <h2>Allan.K</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about" class="active"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#services"><i class="fas fa-briefcase"></i> Services</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#experience"><i class="fas fa-history"></i> Experience</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero/About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hi, My name is <span class="highlight">Allan K. Kebenei</span>, a <span class="highlight">Cyber security Engineer </span> in search for <span class="highlight">Opportunities</span>!</h1>
+                    </div>
+                    <div class="hero-image">
+                        <img src="myfoto2.jpg" alt="Your Name">
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h2 class="section-title">About</h2>
+                    <h3 class="subtitle">Mostly self taught with a lot of interest in Cyber Security</h3>
+                    <p>Hi, I am Allan, a 23 year old located in Nairobi, Kenya. My interest has always been in Cyber Security. I want to ensure that security is our top priority within our quickly developing world and would like to contribute to a more secure digital environment. I like to keep myself relevant by solving Capture The Flags and following the latest IT developments. I also keep myself busy by listening to music, gaming and listening to podcasts like Past gas Podcast. I would like to improve myself within the Cyber Security field in order to become the ultimate Penetration Tester. I always keep a close eye to newly discovered vulnerabilities and like to challenge myself with unsolved weaknesses. I am someone who wants to make the world a more secure place for the next generation, even if it goes unnoticed.</p>
+                    <p></p>
+                    
+                    <h3 class="subtitle">Projects or achievements</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <h3 class="subtitle">What I specialize in</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Network Attacks</h4>
+                        <p>I'm able to use some powerful set of tools and methods like Airmon-ng, Evil Twin, Bruteforce, Wireshark and Mitm. These allow me to conduct a range of attacks and analysisses on networks, identify vunerabilities and potential entry points for unauthorized access.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-lock"></i>
+                        <h4></h4>
+                        <p>Description of your service</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Service 3</h4>
+                        <p>Description of your service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <h3 class="subtitle">Mastering modern technologies</h3>
+                
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Skill Name</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-category">Professional</span>
+                        <span class="skill-years">5 years experience</span>
+                    </div>
+                    
+                    <!-- Add more skills by copying the skill-item div -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experiences</h2>
+                
+                <div class="experience-tabs">
+                    <button class="tab-btn active" onclick="showTab('work')">Work Experience</button>
+                    <button class="tab-btn" onclick="showTab('education')">Education</button>
+                    <button class="tab-btn" onclick="showTab('courses')">Courses</button>
+                </div>
+
+                <div id="work" class="tab-content active">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023 - Present</div>
+                            <div class="timeline-content">
+                                <h4>Job Title</h4>
+                                <p>Company Name</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="education" class="tab-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2019 - 2023</div>
+                            <div class="timeline-content">
+                                <h4>Degree Name</h4>
+                                <p>University Name</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="courses" class="tab-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h4>Course Name</h4>
+                                <p>Platform/Institution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <h3 class="subtitle">Let's work together</h3>
+                <div class="contact-content">
+                    <p>Email: your.email@example.com</p>
+                    <p>Location: Your City, Country</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
