@@ -1058,3 +1058,307 @@ body {
         display: block;
     }
 }
+/* Bottom Navigation Buttons */
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    margin-top: 40px;
+}
+
+.bottom-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 50px;
+    background: linear-gradient(135deg, var(--accent), #0099cc);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.bottom-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: 0.5s;
+}
+
+.bottom-btn:hover::before {
+    left: 100%;
+}
+
+.bottom-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.4);
+}
+
+.bottom-btn i {
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.bottom-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Secondary button style (for back button) */
+.bottom-btn.secondary {
+    background: transparent;
+    border: 3px solid var(--accent);
+    color: var(--accent);
+}
+
+.bottom-btn.secondary:hover {
+    background: var(--accent);
+    color: white;
+}
+
+.bottom-btn.secondary:hover i {
+    transform: translateX(-5px);
+}
+
+/* Make sure contact page sections don't get cut off */
+.contact-section .container {
+    padding-bottom: 40px;
+}
+/* Top Right Contact Button */
+.top-contact-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, var(--accent), #0099cc);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+    transition: var(--transition);
+    z-index: 999;
+    border: 2px solid transparent;
+}
+
+.top-contact-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.top-contact-btn i {
+    transition: var(--transition);
+}
+
+.top-contact-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.project-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: var(--transition);
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.15);
+}
+
+.project-image {
+    height: 220px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-icon {
+    font-size: 60px;
+    color: var(--accent);
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 212, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transform: translateY(20px);
+    transition: var(--transition);
+}
+
+.project-link i {
+    font-size: 32px;
+}
+
+.project-card:hover .project-link {
+    transform: translateY(0);
+}
+
+.project-info {
+    padding: 30px;
+}
+
+.project-info h4 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.project-info p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-tech span {
+    padding: 6px 14px;
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--accent);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+/* GitHub Section */
+.github-section {
+    text-align: center;
+    padding: 50px;
+    background: var(--bg-card);
+    border-radius: 20px;
+    border: 1px solid #222;
+    position: relative;
+    overflow: hidden;
+}
+
+.github-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, var(--accent-glow) 0%, transparent 70%);
+    opacity: 0.3;
+}
+
+.github-section p {
+    color: var(--text-secondary);
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 40px;
+    background: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+    border: 2px solid #444;
+}
+
+.github-btn:hover {
+    background: #2f363d;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent);
+}
+
+.github-btn i {
+    font-size: 24px;
+}
+
+/* Responsive for top button */
+@media (max-width: 968px) {
+    .top-contact-btn {
+        top: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .top-contact-btn span {
+        display: none;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
